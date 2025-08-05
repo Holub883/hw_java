@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  let showObjects = arr => {
+    arr.forEach(obj => {
+      let div = document.createElement('div');
+      div.innerText = `ID: ${obj.id}, Name: ${obj.name}, Age: ${obj.age}`;
+      document.body.appendChild(div);
+    });
+  };
+  showObjects([
+    {id: 1, name: 'Іван', age: 25},
+    {id: 2, name: 'Оля', age: 30}
+  ]);
+</script>
+</body>
+</html>
